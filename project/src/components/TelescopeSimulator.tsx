@@ -67,9 +67,9 @@ const celestialObjects: CelestialObject[] = [
     type: 'Supernova Remnant',
     description: 'The remnant of a supernova observed in 1054 AD',
     images: {
-      hubble: 'https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-41951.jpeg',
+      hubble: 'https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg',
       webb: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg',
-      spitzer: 'https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-41951.jpeg',
+      spitzer: 'https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg',
       chandra: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg'
     }
   },
@@ -79,10 +79,10 @@ const celestialObjects: CelestialObject[] = [
     type: 'Star-forming Region',
     description: 'A stellar nursery where new stars are being born',
     images: {
-      hubble: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg',
-      webb: 'https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-41951.jpeg',
+      hubble: 'https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg',
+      webb: 'https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg',
       spitzer: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg',
-      chandra: 'https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-41951.jpeg'
+      chandra: 'https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg'
     }
   },
   {
@@ -134,7 +134,7 @@ const TelescopeSimulator: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen pt-20 pb-12 px-6">
+    <div style={{marginTop:"50px"}}className="min-h-screen pt-20 pb-12 px-6">
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">

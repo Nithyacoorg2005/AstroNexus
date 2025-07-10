@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ZoomIn, ZoomOut, RotateCcw, Volume2, VolumeX, Play, Pause, Download, Info, Eye, Layers, Globe, Star, Sparkles, Navigation, Telescope } from 'lucide-react';
+import { ZoomIn, ZoomOut, RotateCcw, Volume2, VolumeX, Play, Pause, Info, Layers, Globe, Star, Sparkles, Navigation, Telescope } from 'lucide-react';
 
 interface CelestialBody {
   id: string;
@@ -714,7 +714,7 @@ const UniverseExplorer: React.FC = () => {
   const [volume, setVolume] = useState(0.3);
   const [isMuted, setIsMuted] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
-  const [selectedLayer, setSelectedLayer] = useState<'core' | 'mantle' | 'crust' | 'atmosphere'>('core');
+  const [] = useState<'core' | 'mantle' | 'crust' | 'atmosphere'>('core');
   const [autoRotate, setAutoRotate] = useState(true);
   const [rotation, setRotation] = useState(0);
   const [tilt, setTilt] = useState(0);
@@ -725,7 +725,7 @@ const UniverseExplorer: React.FC = () => {
   const audioContextRef = useRef<AudioContext | null>(null);
   const oscillatorRef = useRef<OscillatorNode | null>(null);
   const gainNodeRef = useRef<GainNode | null>(null);
-  const effectOscillatorRef = useRef<OscillatorNode | null>(null);
+  //const effectOscillatorRef = useRef<OscillatorNode | null>(null);
 
   const zoomLevels = [
     { name: 'Surface Detail', scale: 0.1, description: 'Extreme close-up surface features and textures' },
@@ -1122,7 +1122,7 @@ const UniverseExplorer: React.FC = () => {
         ))}
       </div>
 
-      <div className="container mx-auto max-w-7xl relative z-10">
+      <div style={{marginTop:"50px"}} className="container mx-auto max-w-7xl relative z-10">
         {/* Header */}
         <div className="text-center mb-8 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
@@ -1462,7 +1462,7 @@ const UniverseExplorer: React.FC = () => {
         )}
       </div>
 
-      <style jsx>{`
+      <style >{`
         @keyframes spin {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }

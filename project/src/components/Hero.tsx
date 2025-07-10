@@ -42,9 +42,9 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center relative px-6">
+    <div style={{marginTop:"50px"}} className="min-h-screen flex flex-col justify-center items-center relative px-6">
       <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
-        <h1 style={{marginTop:"90px"}} className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-scale-in">
+        <h1 style={{marginTop:"120px"}} className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-scale-in">
           AstroNexus
         </h1>
         

@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Clock, Star, Zap, Globe, Rocket, Telescope, Calendar, BookOpen, Search, Filter, ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useState } from 'react';
+import { Clock, Star, Zap, Globe, Rocket, Telescope,  Search, Filter, ChevronDown, ChevronUp } from 'lucide-react';
 
 interface TimelineEvent {
   id: string;
@@ -76,7 +76,7 @@ const timelineEvents: TimelineEvent[] = [
     description: 'Our galaxy begins to form from cosmic gas and dust, eventually becoming the spiral galaxy we call home, containing hundreds of billions of stars.',
     icon: Globe,
     color: 'from-purple-400 to-pink-500',
-    category: 'galactic',
+    category: 'planetary',
     significance: 'Formation of our cosmic neighborhood and the stellar environment that would eventually lead to our solar system.',
     details: [
       'Dark matter halo forms first, providing gravitational framework',
@@ -307,7 +307,7 @@ const CosmicTimeline: React.FC = () => {
       <div className="container mx-auto max-w-6xl relative z-10">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 style={{marginTop:"50px"}} className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             Cosmic Timeline Explorer
           </h1>
           <p className="text-white/70 text-lg max-w-3xl mx-auto">
@@ -504,7 +504,7 @@ const CosmicTimeline: React.FC = () => {
 
         {/* Detailed Event Modal */}
         {selectedEvent && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
+          <div style={{marginTop:"50px"}} className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
             <div className="relative max-w-4xl w-full max-h-[90vh] bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-8 overflow-y-auto animate-scale-in">
               <button
                 onClick={() => setSelectedEvent(null)}

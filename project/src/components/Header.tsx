@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavigate }) => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3 hover:scale-105 transition-transform">
             <Telescope className="h-8 w-8 text-cyan-400" />
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            <h1 style={{marginRight:"20px"}}className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               AstroNexus
             </h1>
           </div>

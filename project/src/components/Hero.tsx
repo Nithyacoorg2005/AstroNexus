@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center relative px-6">
       <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
-        <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-scale-in">
+        <h1 style={{marginTop:"90px"}} className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-scale-in">
           AstroNexus
         </h1>
         
@@ -54,7 +54,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           with our advanced planetarium featuring zoom capabilities from galactic scales down to planetary surfaces.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12 animate-fade-in-stagger">
+        <div className="grid grid-cols-5 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12 animate-fade-in-stagger">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (

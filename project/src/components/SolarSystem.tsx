@@ -1,5 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { Info, ZoomIn, ZoomOut, RotateCcw, Search, Layers, Eye, Globe, Thermometer, Wind, Mountain, Droplets } from 'lucide-react';
+import React, {  useState } from 'react';
+import {  ZoomIn, ZoomOut, Search, Layers, Globe, Thermometer, Wind, Mountain, Droplets } from 'lucide-react';
 
 interface Planet {
   name: string;
@@ -711,7 +711,7 @@ const SolarSystem: React.FC = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-8 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 style={{marginTop:"50px"}} className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             Advanced Solar System Explorer
           </h1>
           <p className="text-white/70 text-lg max-w-3xl mx-auto">
@@ -761,9 +761,9 @@ const SolarSystem: React.FC = () => {
         {/* 3D Solar System View */}
         <div className="h-[600px] bg-black/20 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden animate-fade-in-stagger flex items-center justify-center mb-8">
           <div className="text-center">
-            <div className="text-6xl mb-4">🌌</div>
-            <h3 className="text-2xl font-bold text-white mb-2">Interactive 3D Solar System</h3>
-            <p className="text-white/60 mb-4">Advanced 3D visualization would be rendered here</p>
+            
+            <h3 className="text-2xl font-bold text-white mb-2">Select planet to know more about</h3>
+            
             <div className="grid grid-cols-4 md:grid-cols-8 gap-2 max-w-2xl mx-auto">
               {planets.map((planet) => (
                 <button
@@ -992,10 +992,10 @@ const SolarSystem: React.FC = () => {
                         <p className="text-white/80">{selectedPlanet.layers[selectedLayer].description}</p>
                       </div>
                       
-                      <div className="bg-white/5 p-4 rounded-lg">
+                      {/* <div className="bg-white/5 p-4 rounded-lg">
                         <h4 className="font-semibold text-green-400 mb-2">Temperature</h4>
                         <p className="text-white/80">{selectedPlanet.layers[selectedLayer].temperature}</p>
-                      </div>
+                      </div> */}
                       
                       <div className="bg-white/5 p-4 rounded-lg">
                         <h4 className="font-semibold text-purple-400 mb-2">Composition</h4>

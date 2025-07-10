@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ZoomIn, Download, Star, Search, Filter, X, Eye, Calendar, Camera, Satellite, Telescope as TelescopeIcon, Globe, Layers, Info } from 'lucide-react';
+import { ZoomIn, Download, Star, Search, Filter, X, Calendar,  Telescope as  Info } from 'lucide-react';
 
 interface SpaceImage {
   id: string;
@@ -51,7 +51,7 @@ const SpaceGallery: React.FC = () => {
     {
       id: '1',
       title: 'Crab Nebula - Supernova Remnant M1',
-      url: 'https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-41951.jpeg',
+      url: 'https://images.pexels.com/photos/17662495/pexels-photo-17662495.jpeg',
       description: 'The Crab Nebula is a supernova remnant and pulsar wind nebula in the constellation Taurus. This spectacular object is the result of a supernova explosion observed by Chinese astronomers in 1054 AD. The nebula contains a pulsar at its center that spins 30 times per second, emitting beams of radiation that sweep across space like a cosmic lighthouse.',
       category: 'nebulae',
       date: '2024-01-15',
@@ -129,7 +129,7 @@ const SpaceGallery: React.FC = () => {
     {
       id: '3',
       title: 'Mars - Olympus Mons and Valles Marineris',
-      url: 'https://images.pexels.com/photos/39649/mars-planet-red-planet-solar-system-39649.jpeg',
+      url: 'https://images.pexels.com/photos/32909721/pexels-photo-32909721.jpeg',
       description: 'This comprehensive view of Mars showcases the planet\'s most dramatic geological features including Olympus Mons, the largest volcano in the solar system, and Valles Marineris, a canyon system that stretches over 4,000 kilometers across the Martian surface. The image reveals the complex geological history of the Red Planet.',
       category: 'planets',
       date: '2024-01-25',
@@ -207,7 +207,7 @@ const SpaceGallery: React.FC = () => {
     {
       id: '5',
       title: 'Saturn - Ring System and Atmospheric Dynamics',
-      url: 'https://images.pexels.com/photos/39644/saturn-planet-rings-space-39644.jpeg',
+      url: 'https://images.pexels.com/photos/3805983/pexels-photo-3805983.jpeg',
       description: 'This detailed view of Saturn reveals the intricate structure of its magnificent ring system and the complex atmospheric dynamics of the gas giant. The image shows the planet\'s hexagonal storm at the north pole, various atmospheric bands, and the detailed structure of the rings including the Cassini Division.',
       category: 'planets',
       date: '2024-02-05',
@@ -324,7 +324,7 @@ const SpaceGallery: React.FC = () => {
     {
       id: '8',
       title: 'Jupiter - Great Red Spot and Atmospheric Bands',
-      url: 'https://images.pexels.com/photos/39644/saturn-planet-rings-space-39644.jpeg',
+      url: 'https://images.pexels.com/photos/29998043/pexels-photo-29998043.jpeg',
       description: 'This detailed image of Jupiter showcases the planet\'s most famous feature, the Great Red Spot, along with the complex banded structure of its atmosphere. The Great Red Spot is a massive anticyclonic storm that has been raging for at least 400 years and is larger than Earth.',
       category: 'planets',
       date: '2024-02-20',
@@ -418,7 +418,7 @@ const SpaceGallery: React.FC = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 style={{marginTop:"50px"}} className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             Cosmic Image Archive
           </h1>
           <p className="text-white/70 text-lg max-w-3xl mx-auto">
@@ -559,7 +559,7 @@ const SpaceGallery: React.FC = () => {
 
         {/* Detailed Image Modal */}
         {selectedImage && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm animate-fade-in">
+          <div style={{marginTop:"100px"}} className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm animate-fade-in">
             <div className="relative max-w-6xl max-h-[95vh] bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/20 animate-scale-in">
               <button
                 onClick={() => setSelectedImage(null)}

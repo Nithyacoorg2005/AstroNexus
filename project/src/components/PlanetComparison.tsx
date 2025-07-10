@@ -177,7 +177,7 @@ const PlanetComparison: React.FC = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 style={{marginTop:"50px"}} className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             Celestial Body Comparison
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
